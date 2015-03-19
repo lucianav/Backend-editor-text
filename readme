@@ -1,0 +1,27 @@
+Luciana Elena Viziru - 312CA
+
+Tema 2 Structuri de Date
+
+In implementare, am folosit doua liste dublu inlantuite, pentru text si clipboard
+si doua stive de stringuri, pentru undo si redo. Siva a fost implementata cu 
+ajutorul unei liste dublu-inlantuite.
+Fata de metodele specifice ale listei, am adaugat metodele addSomewhere(value, pos)
+si removeSomewhere(pos), pentru a facilita adaugarea cuvintelor oriunde in text, o
+metoda de golire a listei si am supraincarcat operatorul de atribuire.
+In stiva am adaugat o metoda de golire a stivei, pentru stergerea stivei de redo.
+
+Pentru fiecare operatie, am cautat ori pozitia de adaugare/scoatere a cuvintelor,
+ori indecsii din text potriviti operatiei. Apoi am efectuat modificarile.
+
+Pentru operatiile de copy si cut, cuvintele cuprinse intre indicii start si stop
+sunt copiate in clipboard. In cazul cut, acestea sunt si decupate din text.
+Pentru paste, continutul clipboardului este copiat in text incepand cu pozitia 
+start.
+
+La fiecare operatie, exceptand copy, este adaugat textul curent in stiva de
+undo, inainte de modificare. Pentru operatiile de add, cut si paste, stiva de
+redo se goleste.
+
+
+
+
