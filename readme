@@ -1,7 +1,3 @@
-Luciana Elena Viziru - 312CA
-
-Tema 2 Structuri de Date
-
 In implementare, am folosit doua liste dublu inlantuite, pentru text si clipboard
 si doua stive de stringuri, pentru undo si redo. Siva a fost implementata cu 
 ajutorul unei liste dublu-inlantuite.
